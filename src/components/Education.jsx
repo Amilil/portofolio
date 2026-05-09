@@ -5,12 +5,12 @@ function Education() {
     <section id="education" className="education">
       <div className="education-container">
         <div className="education-header">
-          <span className="education-label">PENDIDIKAN</span>
-          <h2>Riwayat Pendidikan</h2>
+          <span className="education-label fade-in-up">PENDIDIKAN</span>
+          <h2 className="fade-in-up stagger-1">Riwayat Pendidikan</h2>
         </div>
 
         <div className="education-timeline">
-          <div className="education-item">
+          <div className="education-item fade-in-up stagger-2">
             <div className="education-icon">🎓</div>
             <div className="education-info">
               <h3>Nama Universitas</h3>
@@ -20,7 +20,7 @@ function Education() {
             </div>
           </div>
 
-          <div className="education-item">
+          <div className="education-item fade-in-up stagger-3">
             <div className="education-icon">🏫</div>
             <div className="education-info">
               <h3>Nama Sekolah Menengah</h3>

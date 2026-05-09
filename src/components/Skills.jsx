@@ -14,16 +14,15 @@ function Skills() {
     <section id="skills" className="skills">
       <div className="skills-container">
         <div className="skills-header">
-          <span className="skills-label">KEMAMPUAN</span>
-          <h2>Skills & Tools</h2>
+          <span className="skills-label fade-in-up">KEMAMPUAN</span>
+          <h2 className="fade-in-up stagger-1">Skills & Tools</h2>
         </div>
         
         <div className="skills-grid">
           {skills.map((skill, index) => (
             <div 
-              className="skill-item" 
+              className={`skill-item fade-in-up stagger-${index + 1}`} 
               key={index}
-              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="skill-info">
                 <span className="skill-icon">{skill.icon}</span>
@@ -41,13 +40,13 @@ function Skills() {
         </div>
         
         <div className="tech-stack">
-          <h3>Tech yang lagi dipelajari</h3>
+          <h3 className="fade-in-up">Tech yang lagi dipelajari</h3>
           <div className="tech-tags">
-            <span>TypeScript</span>
-            <span>Next.js</span>
-            <span>Tailwind</span>
-            <span>Node.js</span>
-            <span>PostgreSQL</span>
+            <span className="fade-in-up stagger-1">TypeScript</span>
+            <span className="fade-in-up stagger-2">Next.js</span>
+            <span className="fade-in-up stagger-3">Tailwind</span>
+            <span className="fade-in-up stagger-4">Node.js</span>
+            <span className="fade-in-up stagger-5">PostgreSQL</span>
           </div>
         </div>
       </div>

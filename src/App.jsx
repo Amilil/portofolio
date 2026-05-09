@@ -8,13 +8,18 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ThemeToggle from './components/ThemeToggle'
 import ScrollToTop from './components/ScrollToTop'
+import ParticleCanvas from './components/ParticleCanvas'
 import { useTheme } from './context/ThemeContext'
+import { useScrollAnimation } from './hooks/useScrollAnimation'
+import './styles/animations.css'
 import './App.css'
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const { isDark } = useTheme();
+
+  useScrollAnimation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,6 +43,7 @@ function App() {
 
   return (
     <>
+      <ParticleCanvas />
       <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${!isDark ? 'light' : ''}`}>
         <div className="nav-logo">Portfolio</div>
         <div className="nav-links">

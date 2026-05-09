@@ -5,28 +5,28 @@ function Contact() {
     <section id="contact" className="contact">
       <div className="contact-container">
         <div className="contact-header">
-          <span className="contact-label">KONTAK</span>
-          <h2>Let's Connect</h2>
-          <p>Ada yang mau didiskusikan atau kerja sama? Jangan ragu buat Hubungi saya!</p>
+          <span className="contact-label fade-in-up">KONTAK</span>
+          <h2 className="fade-in-up stagger-1">Let's Connect</h2>
+          <p className="fade-in-up stagger-2">Ada yang mau didiskusikan atau kerja sama? Jangan ragu buat Hubungi saya!</p>
         </div>
         
         <div className="contact-content">
           <div className="contact-info">
-            <div className="contact-item">
+            <div className="contact-item fade-in-left">
               <div className="contact-icon">📧</div>
               <div>
                 <h4>Email</h4>
                 <p>emailkamu@gmail.com</p>
               </div>
             </div>
-            <div className="contact-item">
+            <div className="contact-item fade-in-left stagger-1">
               <div className="contact-icon">📍</div>
               <div>
                 <h4>Lokasi</h4>
                 <p>Indonesia</p>
               </div>
             </div>
-            <div className="contact-item">
+            <div className="contact-item fade-in-left stagger-2">
               <div className="contact-icon">💼</div>
               <div>
                 <h4>Social</h4>
@@ -39,7 +39,7 @@ function Contact() {
             </div>
           </div>
           
-          <form className="contact-form">
+          <form className="contact-form fade-in-right stagger-2">
             <div className="form-group">
               <input type="text" placeholder="Nama" required />
             </div>
@@ -53,7 +53,6 @@ function Contact() {
           </form>
         </div>
       </div>
-      
     </section>
   );
 }
