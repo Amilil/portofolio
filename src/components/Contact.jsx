@@ -54,9 +54,6 @@ function Contact() {
         </div>
       </div>
       
-      <footer className="footer">
-        <p>© 2026 Portfolio. Dibuat oleh Amilil</p>
-      </footer>
     </section>
   );
 }
