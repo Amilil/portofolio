@@ -10,6 +10,17 @@
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(139, 92, 246, 0.1);
   z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(10, 10, 15, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar.light.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .nav-logo {
@@ -52,7 +63,11 @@
   color: var(--text-primary);
 }
 
-.nav-links a:hover::after {
+.nav-links a.active {
+  color: var(--text-primary);
+}
+
+.nav-links a.active::after {
   width: 100%;
 }
 
